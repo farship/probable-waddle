@@ -7,7 +7,7 @@ import datetime
 import discord
 from discord.ext import commands
 
-bot_token = 'NzI2MTc2NzUxNzQ2Njc4ODU2.XvZfvQ.7se1BH0xBbGX73CsghP1iAdxLtM'
+bot_token = ''
 client = commands.Bot(command_prefix="d. ")
 server_id = client.get_guild(bot_token)
 propaganda = ""
@@ -103,7 +103,7 @@ async def on_message(message):
     
 
 #   ----------RESTRICTED COMMANDS----------    #
-    valid_users = ["Nyrrha Pikos#3583", "peterhendryalt#5657", "Mr. Dr. Bones V#4275"]
+    valid_users = ["Nyrrha Pikos#3583", "peterhendryalt#5657"]
     uwu_lines = ["*nuzzles you bulgie wulgie*", "hewwo Senpai...", "Nyah!", "OwO"]
 
 
