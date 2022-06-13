@@ -1,0 +1,154 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(40,40,40);
+  padding: 20px;
+  font-family: Arial;
+  color: White;
+  font-size: medium;
+}
+
+/* Center website */
+.main {
+  max-width: 90%;
+  margin: auto;
+}
+
+h1 {
+  font-size: xxx-large;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 4px;
+}
+
+/* Create three columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(30,30,30);
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Astronomy Gallery</h1>
+<button onclick="location.href='/';">APOD and Forecast</button>
+<button onclick="location.href='/apod';">APOD</button>
+<button onclick="location.href='/forecast';">Forecast</button>
+<button onclick="location.href='/pi';">Pi Version</button>
+<button onclick="location.href='/gallery';">Gallery</button>
+<hr>
+
+<!--<h2>PORTFOLIO</h2>-->
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="static/milkyway1.jpg" alt="lkyway" style="width:100%">
+      <h3>Milky Way Streak</h3>
+      <p>Exposure Time: 15:00 = 30 frames x 30 sec
+	ISO-3200 - f/5.6 - 35mm - 5080x3300</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="static/vega1.jpg" alt="Vega" style="width:100%">
+      <h3>Vega Light Scattering</h3>
+      <p>Exposure Time: 10:00 = 20 frames x 30 sec
+	ISO-12800 - f/5.6 - 300mm - 5208 x 3476</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="static/cignus1.jpg" alt="Cignus" style="width:100%">
+      <h3>Emmision Gas Surrounding Cignus</h3>
+      <p>Exposure Time: 52:42 = 31 frames x 102 sec
+	ISO-3200 - f/4.5 - 37mm - 4892 x 3476</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="static/moonpartial1.png" alt="Partial Moon" style="width:100%">
+      <h3>Partial Moon Craters</h3>
+      <p>Frames: 20 - 172mm - ISO-200
+	5152 x 3864</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="static/milkywaysagittarius2.jpg" alt="Milkyway2" style="width:100%">
+      <h3>Milky Way with a Large Star Cluster</h3>
+      <p>Exposure Time: 48:48 = 32 frames x 91.5 sec
+	ISO-1600 - f/5.6 - 28mm - 5172 x 3440</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="static/orionnebula1.jpg" alt="Orion Nebula1" style="width:100%">
+      <h3>Orion Nebula</h3>
+      <p>Exposure Time: 29:20 = 54 frames x 33 sec
+	ISO-1600 - f/5.6 - 240mm - 5084 x 3336</p>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="static/orionwide2.jpg" alt="Orion Wide" style="width:100%">
+  <h3>Orion, Flame, Running-man Nebula and Orion's Belt</h3>
+  <p>Exposure Time: 42:20 = 21 frames x 122 sec
+	ISO-1600 - f/4.0 - 80mm - 3932 x 3152</p>
+</div>
+
+<div class="content">
+  <iframe height="450" src="https://www.youtube.com/embed/hpZsQh1OuJw" frameborder="0" encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  <h3>Orion Time Lapse</h3>
+  <p>Frames: 568 x 25 sec - 29mm ISO-1600
+	Time: 23:29 -> 3:29 = 30fps 8 sec</p>
+</div>
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>

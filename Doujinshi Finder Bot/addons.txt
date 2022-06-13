@@ -1,0 +1,29 @@
+STREAMLINING
+split into two files --- implemented
+remove need to move variables via files --- implemented
+
+FEATURES
+search by tag - would take too long to search
+dinnerbathme --- implemented
+save deleted messages --- implemented
+
+r34 search *seperate file
+
+send custom message without command --- implemented through sep server
+
+connect to user's voice channel and play select files
+
+optimise tag search by cutting to just the tags and language section - longest time save maybe
+
+add second whitelist list that is set from input after	d! tag []
+
+add to filter and update file  and variable
+update filter in variable
+
+d! hello
+d! random
+d! input
+d! uwu
+d! tadaima
+d!i 'image name'
+d! lots 'number<=10'

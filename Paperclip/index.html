@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="interface.css">
+        <h1>Universal Paperclip</h1> 
+        
+    </head>
+    <body onload=startUp()> <!--onload=passport()>-->
+        
+        <div id=leftColumn>
+            <h1 class= smallHeading id=lifetimePaperclipCounter>Total Paperclips: 0</h1>
+            <h1 class= smallHeading id=paperclipCounter>Paperclips: 0</h1>
+            <p class= sectionLabel>Marketing</p>
+            <button class= button1 id= lowerPrice onclick= "lowerPrice()">Lower</button>
+            PPC: $ <span id= pricePerClip>0.25</span>
+            <button class= button1 id= higherPrice onclick= "higherPrice()">Higher</button>
+            <br>
+            <p>Market Demand: <span id= marketDemand>50%</span></p>
+            <hr>
+            <p class= sectionLabel>Manufacturing</p>
+            <button class= button1 id= manualClipper onclick="manualClipper()"> Manual Paperclip </button>
+            <p id= numWire>Wire: 1000</p>
+            <p id= priceWire>Cost: 25 Clips</p>
+            <button class= button1 id= buyWire onclick="buyWire()">Buy Wire</button>
+            <p class=sectionLabel>Upgrades</p>
+            <button class= button1 id= priceManualClipper onclick="buyManualClipper()">+1 Manual Clipping (100 Clips)</button>
+            <button class= button1 id= priceAutoClipper onclick="buyAutoClipper()">+1 Auto Clipper (175 Clips)</button>
+        </div>
+        <div id= middleColumn>
+            <br>
+            <br>
+            <p class= smallHeading>Projects</p>
+            <p class= sectionLabel>Research Centre</p>
+            <p id= numRP>Research Points: 0</p>
+            <p id= numCP>Creative Points: 0</p>
+            <p id= numResearchs>Researchers: 1</p>
+            <button class= button1 id= buyResearcher onclick="buyResearcher()">Hire Researcher</button>
+            <p id= numThinkers>Philosophers: 1</p>
+            <button class= button1 id= buyThinker onclick="buyThinker()">Hire Thinker</button>
+
+
+
+
+        </div>
+        <div id= rightColumn>
+            
+
+        </div>
+
+        <div id= devColumn>
+            <button class= buttonDev id= devAddClips onclick="devAddClips(10000)">ADD CLIPS</button>
+        </div>
+        <script src="clipping.js">
+
+        </script>
+    </body>
+</html> 

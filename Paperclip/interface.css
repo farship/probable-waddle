@@ -1,0 +1,59 @@
+#leftColumn {
+    float: left;
+    width: 300px;
+    visibility: visible;
+}
+#middleColumn {
+    float: left;
+    width: 500px;
+    margin-left: 10px;
+    visibility: hidden;
+}
+#rightColumn {
+    float: left;
+    width: 300px;
+    margin-left: 10px;
+    visibility: hidden;
+}
+#devColumn {
+    float: left;
+    width: 300px;
+    margin-left: 10px;
+    visibility: hidden;
+}
+body {
+    background-color: black;
+    color: white;
+}
+h1 {
+    color: white;
+    column-span: all;
+}
+p {
+    color: white;
+}
+button {
+    background-color: whitesmoke;
+    border: 1px solid rgb(36, 9, 110);
+    -ms-grid-column-span: 1;
+    color: rgb(36, 9, 110);
+}
+span {
+    color: white;
+}
+.button1 {
+    border-radius: 3px;
+    font-size: 13px;
+}
+.buttonDev {
+    background-color: darkviolet;
+    color: yellow;
+}
+.smallHeading {
+    font-size: 24;
+    color: white;
+    column-span: all;
+}
+.sectionLabel {
+    font-size: 18px;
+}
